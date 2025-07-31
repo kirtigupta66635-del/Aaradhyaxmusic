@@ -151,7 +151,7 @@ sudo bash start
 | Platform            | Link                                                                                                                                                                                                         |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 🔑 Generate Session | <a href="https://t.me/SessionBuilderbot"><img src="https://img.shields.io/badge/Session%20-Generator-orange?style=for-the-badge&logo=heroku" /></a>                                                        |
-| 🌍 Heroku Deploy    | <a href="http://dashboard.heroku.com/new?template=https://github.com/CertifiedCoders/TuneViaBot"><img src="https://img.shields.io/badge/Deploy%20to-Heroku-purple?style=for-the-badge&logo=heroku" /></a> |
+| 🌍 Heroku Deploy    | <a href="http://dashboard.heroku.com/new?template=https://github.com/vampirebotsntwrk/chandani"><img src="https://img.shields.io/badge/Deploy%20to-Heroku-purple?style=for-the-badge&logo=heroku" /></a> |
 
 ---
 
