@@ -12,15 +12,15 @@ API_HASH = getenv("API_HASH")
 BOT_TOKEN = getenv("BOT_TOKEN")
 
 OWNER_ID = int(getenv("OWNER_ID", 8051082678))
-OWNER_USERNAME = getenv("OWNER_USERNAME", "llVAMPIRE_KINGlll")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "lllVAMPIRE_KINGll")
 BOT_USERNAME = getenv("BOT_USERNAME", "TuneviaBot")
 BOT_NAME = getenv("BOT_NAME", "˹ᴛᴜɴᴇ ᴠɪᴀ ʙᴏᴛ˼")
 ASSUSERNAME = getenv("ASSUSERNAME", "tuneviaassis")
-EVALOP = list(map(int, getenv("EVALOP", "8051082678").split()))
+EVALOP = list(map(int, getenv("EVALOP", "8410426172").split()))
 
 # ───── Mongo & Logging ───── #
 MONGO_DB_URI = getenv("MONGO_DB_URI")
-LOGGER_ID = int(getenv("LOGGER_ID", -1002830767280))
+LOGGER_ID = int(getenv("LOGGER_ID", -1003070925721))
 
 # ───── Limits and Durations ───── #
 RESTART_INTERVAL = int(getenv("RESTART_INTERVAL", 86400))  # default 24 hours
@@ -40,13 +40,13 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 # ───── Git & Updates ───── #
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/vampirebotsntwrk/chandani")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/vampirekingop07/Aaradhya_music")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv("GIT_TOKEN")
 
 # ───── Support & Community ───── #
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/lllVAMPIRE_UPDATElll")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/lllVAMPIRE_UPDATElll")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/llVAMPIRE_UPDATEll")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/llVAMPIRE_UPDATEll")
 
 # ───── Assistant Auto Leave ───── #
 AUTO_LEAVING_ASSISTANT = False
