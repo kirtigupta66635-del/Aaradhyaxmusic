@@ -164,15 +164,25 @@ async def stream(
                 reply_markup=InlineKeyboardMarkup(button),
             )
         else:
-            if not forceplay:
-                db[chat_id] = []
-            await JARVIS.join_call(
-                chat_id,
-                original_chat_id,
-                file_path,
-                video=status,
-                image=thumbnail,
-            )
+    if not forceplay:
+        db[chat_id] = []
+
+    # ✅ Step 1: Check if file_path is valid before joining call
+    if not file_path:
+        raise ValueError(f"❌ stream: 'file_path' is None or empty for chat_id {chat_id}")
+
+    # ✅ Step 2: Ensure correct type
+    if not isinstance(file_path, str):
+        file_path = str(file_path)
+
+    # ✅ Step 3: Now join call safely
+    await JARVIS.join_call(
+        chat_id,
+        original_chat_id,
+        file_path,
+        video=status,
+        image=thumbnail,
+    )
             await put_queue(
                 chat_id,
                 original_chat_id,
