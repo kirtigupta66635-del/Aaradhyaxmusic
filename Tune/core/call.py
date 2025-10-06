@@ -235,8 +235,16 @@ class Call:
         assistant = await group_assistant(self, chat_id)
         lang = await get_lang(chat_id)
         _ = get_string(lang)
-        stream = dynamic_media_stream(path=link, video=bool(video))
 
+        # ✅ Fix start: Prevent NoneType error
+        if not link:
+            raise ValueError(f"❌ join_call: No valid media link provided for chat_id {chat_id}")
+
+        if not isinstance(link, str):
+            link = str(link)
+
+        stream = dynamic_media_stream(path=link, video=bool(video))
+        # ✅ Fix end
         try:
             await assistant.play(chat_id, stream)
         except (NoActiveGroupCall, ChatAdminRequired):
