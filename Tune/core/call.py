@@ -37,7 +37,16 @@ from Tune.utils.errors import capture_internal_err, send_large_error
 autoend = {}
 counter = {}
 
-def dynamic_media_stream(path: str, video: bool = False, ffmpeg_params: str = None) -> MediaStream:
+def dynamic_media_stream(path: str = None, video: bool = False, ffmpeg_params: str = None) -> MediaStream:
+    # ✅ 1. Validate path
+    if not path:
+        raise ValueError("❌ dynamic_media_stream: 'path' is missing or None. Expected a valid URL or file path.")
+
+    # ✅ 2. Force string type (avoid Path/None issues)
+    if not isinstance(path, str):
+        path = str(path)
+
+    # ✅ 3. Safe MediaStream creation
     return MediaStream(
         audio_path=path,
         media_path=path,
