@@ -32,8 +32,8 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 
 # ───── Custom API Configs ───── #
 COOKIE_URL = getenv("COOKIE_URL") #necessary
-API_URL = getenv("https://www.googleapis.com/youtube/v3") #optional
-API_KEY = getenv("AAIzaSyB2zalmv7EoEbRpZANqqYLoqzJ2RPdXKW8") #optional
+API_URL = getenv("httapis.com/youtube/v3") #optional
+API_KEY = getenv("AAIz8") #optional
 
 # ───── Heroku Configuration ───── #
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
