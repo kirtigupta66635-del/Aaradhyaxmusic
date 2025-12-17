@@ -166,6 +166,8 @@ async def stream(
         else:
     if not forceplay:
         db[chat_id] = []
+    else:
+        pass   # यह जरूरी है अगर कोई code नहीं है
 
     # ✅ Step 1: Check if file_path is valid before joining call
     if not file_path:
